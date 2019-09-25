@@ -77,8 +77,13 @@
 
 %----------HEADING-----------------
 \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
-  \textbf{\Large Name} & Email : \href{mailto:mail@mail.com}{mail@mail.com}\\
-  \href{https://website/}{https://website/} & Mobile : +4400000000 \\
+  \textbf{\Large Name} & Email :
+    \href{mailto:haowu@cs.utexas.edu}{haowu@cs.utexas.edu}\\
+    \href{https://cs.utexas.edu/~haowu}{https://cs.utexas.edu/~haowu} & Mobile :
+    (512)965-6853 \\
+    github: \href{https://github.com/haowu4682}{github.com/haowu4682} & 
+    linkedin: \href{https://www.linkedin.com/in/hao-wu-32825043/}
+    {linkedin.com/in/hao-wu-32825043/} \\
 \end{tabular*}
 
 
@@ -86,11 +91,47 @@
 \section{Education}
   \resumeSubHeadingListStart
     \resumeSubheading
-      {University of Somewhere}{Somewhere}
-      {Some course}{Sept 2010 - May 2014}
+      {The university of Texas at Austin}{Austin, TX}
+      {Ph.D}{Current}
 	 \resumeItemListStart
-        \resumeItem{Relevant Modules}
-          {Modules...}
+        \resumeItem{Computer Science}{GPA 3.86}
+      \resumeItemListEnd
+    \resumeSubheading
+      {Tsinghua University}{Beijing China}
+      {B.S.}{Jul 2010}
+	 \resumeItemListStart
+        \resumeItem{Computer Science and Technology}{GPA 90.6/100}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+%-----------PUBLICATIONS---------------
+\section{Publications}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+        {Temporal Prefetching without the off-chip metadata} {MICRO}
+        {Hao Wu, Krishnendra Nathella, Joseph Pusderis, Dam Sunwoo,
+    Akanksha Jain, Calvin Lin}{Oct 2019}
+	 \resumeItemListStart
+    \resumeItem{}{52nd International Symposium on Microarchitecture(MICRO), Columbus, OH}
+      \resumeItemListEnd
+
+    \resumeSubheading{Efficient Meta-Data Management for Irregular Data
+    Prefetching} {ISCA}
+        {Hao Wu, Krishnendra Nathella, Dam Sunwoo, Akanksha Jain, Calvin
+Lin} {Jun 2019}
+	 \resumeItemListStart
+        \resumeItem{}{46th International Symposium on Computer
+        Architecture(ISCA), Pheonix, AZ}
+      \resumeItemListEnd
+
+\resumeSubheading{
+Detecting failures in distributed systems with the FALCON spy network}
+{SOSP}
+{Joshua B. Leners, Hao Wu, Wei-Lun Hung, Marcos K. Aguilera, and Michael
+Walfish} {Oct 2011}
+	 \resumeItemListStart
+        \resumeItem{}{23rd ACM Symposium on Operating Systems Principles(SOSP),
+        Cascais, Portugal}
       \resumeItemListEnd
   \resumeSubHeadingListEnd
 
@@ -99,36 +140,93 @@
 \section{Experience}
   \resumeSubHeadingListStart
     \resumeSubheading
-      {Experience 1}{Some Place}
-      {Short Description}{Sept. 2018 - Dec. 2018}
+      {Arm Inc}{Austin, TX}
+      {Research Intern}{Jan-Nov 2019}
       \resumeItemListStart
       	\resumeItem{}
-          {Some stuff}
+          {I Worked in the microarchitecture team in Arm research}
         \resumeItem{}
-          {More stuff}
+          {My primary
+focus is using prefetching techniques to improve memory system performance}
       \resumeItemListEnd
         \resumeSubheading
-      {Experience 2}{Some Place}
-      {Short Description}{Sept. 2018 - Dec. 2018}
+      {Google Inc}{Beijing, China}
+      {Research Intern}{Sep-Dec 2009}
       \resumeItemListStart
       	\resumeItem{}
-          {Some stuff}
+          {The work there is to conduct research on visualization
+techniques for Google search results}
         \resumeItem{}
-          {More stuff}
+        {They visualize related text, which can be related
+    search results, related tags, and categories of tags}
       \resumeItemListEnd
-    
   \resumeSubHeadingListEnd
 
-\section{Some Section}
+\section{Projects}
   \resumeSubHeadingListStart
     \resumeSubheading
-      {Some Stuff}{}
-      {Some Description}{Dec. 2016}
+      {PhD Thesis: Pracitcal Irregular Prefetching}{}
+      {}{}
       \resumeItemListStart
         \resumeItem{}
-          {Some stuff}
+          { We propose several methods for irregular data prefetching for improving
+    performance and reducing hardware overhead, making irregular prefetching
+    practical.}
+      \resumeItemListEnd
+    \resumeSubheading
+      {Scalable Aggressiveness Control For Many-Core Systems}{}
+      {}{}
+      \resumeItemListStart
         \resumeItem{}
-          {More stuff}
+    {We built a system to dynamically determine a proper aggerssiveness
+    for hardware prefetching}
+        \resumeItem{}{The purpose of the system is to solve the resource
+    competition problem for hardware prefetching in a many-core environment}
+      \resumeItemListEnd
+    \resumeSubheading
+      {LAP: Linear Algebra Processor}{}
+      {}{}
+      \resumeItemListStart
+        \resumeItem{} {LAP is a linear algebra processor/accelerator based on Marss86}
+        \resumeItem{}{Build a cycle-accurate simulation of the processor and a device driver for
+    the processor and OS support for memory management of the processor}
+      \resumeItemListEnd
+    \resumeSubheading
+      {File version management system}{}
+      {}{}
+      \resumeItemListStart
+        \resumeItem{}{Provide a similar service of source code
+    versioning system (e.g. Git and SVN) in a general file system}
+        \resumeItem{} {The system tries to address security and access control
+        issues by using encryption.}
+      \resumeItemListEnd
+    \resumeSubheading
+      {Rebasing Virtual machines after concurrent modification}{}
+      {}{}
+      \resumeItemListStart
+        \resumeItem{}{We built a system tries to solve the divergence problem after concurrent
+    modification of a virtual machine}
+        \resumeItem{} {The system addresses the issue by replaying all the actions of one branch
+    onto the other branch}
+      \resumeItemListEnd
+    \resumeSubheading
+      {Detecting failures using FALCON spy network}{}
+      {}{}
+      \resumeItemListStart
+        \resumeItem{}{We integrated the system with Zookeeper replica service and conduct experiments
+    on the system}
+        \resumeItem{} {The system is used to detect failures quickly inside a
+        distributed system}
+      \resumeItemListEnd
+    \resumeSubheading
+      {A Cross-Compiler System Based on GCC (Bachelor's Thesis)}{}
+      {}{}
+      \resumeItemListStart
+        \resumeItem{}{We modified gcc for compiling programs in C languages to
+        target assembly languages of a certain MIPS like ISA for educational
+        purpose}
+        \resumeItem{} {The system is used by Tsinghua University for educational
+        purposes}
       \resumeItemListEnd
   \resumeSubHeadingListEnd
 %
@@ -136,11 +234,26 @@
 \section{Programming Skills}
  \resumeSubHeadingListStart
    \item{
-     \textbf{Languages}{: C++, Python }
-     \hfill
-     \textbf{Technologies}{: Git, Kubernetes }
+     C++, Python, Java, SQL, C\#, Scala
    }
  \resumeSubHeadingListEnd
+
+%--------GRADUATE CLASSES-------------
+\section{Graduate Classes}
+ \resumeSubHeadingListStart
+    \resumeSubheading {}{}{}{}
+      \resumeItemListStart
+        \resumeItem{System}
+        {Distributed Systems, Operating Systems, Compilers, Advanced Network
+Protocols, Prediction Mechanisms on Computer Architecture}
+        \resumeItem{Theory}
+        {Randomized Algorithms, Formal Verification and Semantics, Numerical
+Analysis, Game Theory}
+        \resumeItem{Application}
+        {Machine Learning}
+      \resumeItemListEnd
+ \resumeSubHeadingListEnd
+
 
 
 %-------------------------------------------
