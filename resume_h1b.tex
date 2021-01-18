@@ -1,0 +1,263 @@
+%-------------------------
+% Resume in Latex
+% Author : Sourabh Bajaj
+% Website: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,10pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[pdftex]{hyperref}
+\usepackage{fancyhdr}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.375in}
+\addtolength{\evensidemargin}{-0.375in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+%-------------------------
+% Custom commands
+\def \ifempty#1{\def\temp{#1} \ifx\temp\empty }
+
+\newcommand{\resumeItem}[2]{
+  \item\small{
+  	\ifempty{#1}#2\else\textbf{#1}{: #2 \vspace{-2pt}}\fi
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{\Large Hao Wu} & Email :
+    \href{mailto:haowu@cs.utexas.edu}{haowu@cs.utexas.edu}\\
+    \href{https://cs.utexas.edu/~haowu}{https://cs.utexas.edu/\~{}haowu} & Mobile :
+    (512)965-6853 \\
+    github: \href{https://github.com/haowu4682}{github.com/haowu4682} & 
+    linkedin: \href{https://www.linkedin.com/in/hao-wu-32825043/}
+    {linkedin.com/in/hao-wu-32825043/} \\
+\end{tabular*}
+
+
+%-----------EDUCATION-----------------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {The university of Texas at Austin}{Austin, TX}
+      {Ph.D}{08/12/10-07/13/20}
+    \resumeSubheading
+      {Tsinghua University}{Beijing China}
+      {B.S.}{08/18/06-07/15/10}
+  \resumeSubHeadingListEnd
+
+%-----------EXPERIENCE-----------------
+\section{Working}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Google Inc}{Sunnyvale, CA}
+      {Software Engineer}{08/24/20-Current}
+      \resumeItemListStart
+        \resumeItem{}
+          {I work as a software engineer in Google's Platform team}
+        \resumeItem{}
+          {My primary duty is implementing software to simulate and improve Google's server performance.}
+      \resumeItemListEnd
+    \resumeSubheading
+      {Arm Inc}{Austin, TX}
+      {Research Intern}{01/08/18-08/20/18,09/03/18-11/30/18}
+      \resumeItemListStart
+      	\resumeItem{}
+          {I Worked in the microarchitecture team in Arm research}
+        \resumeItem{}
+          {My primary
+focus is using prefetching techniques to improve memory system performance}
+      \resumeItemListEnd
+    \resumeSubheading
+      {Google Inc}{Beijing, China}
+      {Research Intern}{09/2009-12/2009}
+      \resumeItemListStart
+      	\resumeItem{}
+          {The work there is to conduct research on visualization
+techniques for Google search results}
+        \resumeItem{}
+        {They visualize related text, which can be related
+    search results, related tags, and categories of tags}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+%-----------PUBLICATIONS---------------
+\section{Publications}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+        {Temporal Prefetching without the off-chip metadata} {MICRO}
+        {Hao Wu, Krishnendra Nathella, Joseph Pusderis, Dam Sunwoo,
+    Akanksha Jain, Calvin Lin}{Oct 2019}
+	 \resumeItemListStart
+    \resumeItem{}{52nd International Symposium on Microarchitecture(MICRO), Columbus, OH}
+      \resumeItemListEnd
+
+    \resumeSubheading{Efficient Meta-Data Management for Irregular Data
+    Prefetching} {ISCA}
+        {Hao Wu, Krishnendra Nathella, Dam Sunwoo, Akanksha Jain, Calvin
+Lin} {Jun 2019}
+	 \resumeItemListStart
+        \resumeItem{}{46th International Symposium on Computer
+        Architecture(ISCA), Pheonix, AZ}
+      \resumeItemListEnd
+
+\resumeSubheading{
+Detecting failures in distributed systems with the FALCON spy network}
+{SOSP}
+{Joshua B. Leners, Hao Wu, Wei-Lun Hung, Marcos K. Aguilera, and Michael
+Walfish} {Oct 2011}
+	 \resumeItemListStart
+        \resumeItem{}{23rd ACM Symposium on Operating Systems Principles(SOSP),
+        Cascais, Portugal}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+
+
+\section{Projects}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {PhD Thesis: Pracitcal Irregular Prefetching}{}
+      {}{}
+      \resumeItemListStart
+        \resumeItem{}
+          { We propose several methods for irregular data prefetching for improving
+    performance and reducing hardware overhead, making irregular prefetching
+    practical.}
+      \resumeItemListEnd
+    \resumeSubheading
+      {Scalable Aggressiveness Control For Many-Core Systems}{}
+      {}{}
+      \resumeItemListStart
+        \resumeItem{}
+    {We built a system to dynamically determine a proper aggerssiveness
+    for hardware prefetching}
+        \resumeItem{}{The purpose of the system is to solve the resource
+    competition problem for hardware prefetching in a many-core environment}
+      \resumeItemListEnd
+    \resumeSubheading
+      {LAP: Linear Algebra Processor}{}
+      {}{}
+      \resumeItemListStart
+        \resumeItem{} {LAP is a linear algebra processor/accelerator based on Marss86}
+        \resumeItem{}{Build a cycle-accurate simulation of the processor and a device driver for
+    the processor and OS support for memory management of the processor}
+      \resumeItemListEnd
+    \resumeSubheading
+      {File version management system}{}
+      {}{}
+      \resumeItemListStart
+        \resumeItem{}{Provide a similar service of source code
+    versioning system (e.g. Git and SVN) in a general file system}
+        \resumeItem{} {The system tries to address security and access control
+        issues by using encryption.}
+      \resumeItemListEnd
+    \resumeSubheading
+      {Rebasing Virtual machines after concurrent modification}{}
+      {}{}
+      \resumeItemListStart
+        \resumeItem{}{We built a system tries to solve the divergence problem after concurrent
+    modification of a virtual machine}
+        \resumeItem{} {The system addresses the issue by replaying all the actions of one branch
+    onto the other branch}
+      \resumeItemListEnd
+    \resumeSubheading
+      {Detecting failures using FALCON spy network}{}
+      {}{}
+      \resumeItemListStart
+        \resumeItem{}{We integrated the system with Zookeeper replica service and conduct experiments
+    on the system}
+        \resumeItem{} {The system is used to detect failures quickly inside a
+        distributed system}
+      \resumeItemListEnd
+    \resumeSubheading
+      {A Cross-Compiler System Based on GCC (Bachelor's Thesis)}{}
+      {}{}
+      \resumeItemListStart
+        \resumeItem{}{We modified gcc for compiling programs in C languages to
+        target assembly languages of a certain MIPS like ISA for educational
+        purpose}
+        \resumeItem{} {The system is used by Tsinghua University for educational
+        purposes}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+%
+%--------PROGRAMMING SKILLS------------
+\section{Programming Skills}
+ \resumeSubHeadingListStart
+   \item{
+     C++, Python, Java, SQL, C\#, Scala
+   }
+ \resumeSubHeadingListEnd
+
+%--------GRADUATE CLASSES-------------
+\section{Graduate Classes}
+ \resumeSubHeadingListStart
+    \resumeSubheading {}{}{}{}
+      \resumeItemListStart
+        \resumeItem{System}
+        {Distributed Systems, Operating Systems, Compilers, Advanced Network
+Protocols, Prediction Mechanisms on Computer Architecture}
+        \resumeItem{Theory}
+        {Randomized Algorithms, Formal Verification and Semantics, Numerical
+Analysis, Game Theory}
+        \resumeItem{Application}
+        {Machine Learning}
+      \resumeItemListEnd
+ \resumeSubHeadingListEnd
+
+
+
+%-------------------------------------------
+\end{document}
